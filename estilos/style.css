@@ -1,0 +1,11 @@
+/* Para resetar as configurações padrões de todas as tags */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 400;
+    outline: none;
+    box-sizing: border-box; 
+
+    font-family: ;
+}

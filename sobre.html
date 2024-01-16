@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="./estilos/style.css" /> <!--Para quando quer usar uma pagina de estilização ao inves de formatar diretamente na pagina html-->
+
+</head>
+<!--/*p{
+        color: #a52a2a; 
+        font-size: 110%; 
+        font-weight: bold;
+    }
+    /*o # identifica que é um id para diferenciar a formatação dos textos*/
+
+    #p-primeiro
+    { 
+         font-size: 50%;
+         color:  #a52a2a;
+    }
+    /*Class é outra forma de passar uma estilização especifica para algo que voce quer no codigo. coloca o . e nome da classe e no codigo voce coloca class="nome da classe" para quando quiser usar a formatação daquela classe*/-->
+<body>
+    <div class="container">
+        <form><!-- tag para indicar que vai ser um formulario que o usuario vai preencher.-->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" onkeyup="validaNome()" placeholder="Informe o seu nome" required/><br>
+            <div id="txtNome"></div>
+            <br><!-- etiqueta que indica o que o usuario vai ter que digitar na caixa de imput, exemplo preenchendo um cadastro ai tem o nome e o espaço onde voce vai digitar seu nome, o label é o nome.-->
+            
+           
+            <!-- é onde o usuario vai digitar os dados.Dentro do input voce diz pro codigo qual é o tipo de input que o usuario vai digitar, se vai ser texto, imagem ou o que for.Proprieda name indica qual o nome da informação que vai ser colocada no input, nesse caso nome. Placeholder é o textinho que voce pode colocar no input pra o usuario ler e saber o que ele tem que digitar. Required serve para evitar que o usuario nao preencha algum campo que esta no form, se o usuario nao digitar vai aparecer uma mensagem solicitando que ele digite.-->
+            <br>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" onkeyup="validaEmail()" placeholder="Informe o seu e-mail" required/>
+            <div id="txtEmail"></div>
+            <br><br>
+
+            <label for="assunto">Assunto:</label><br>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()" placeholder="Digite a sua mensagem." required></textarea>
+            <div id="txtAssunto"></div> <!-- é um campo de digitação um pouco maior que o input--> 
+            <br>
+            <br>
+          <button type="submit">Enviar</button><!-- O botao clicavel, tem que ter o tipo e dentro de um formulario o type sempre vai ser submit.-->
+          </form>
+    </div>
+   <script src="./assets/js/script.js"></script>
+   
+</body>
+</html>
